@@ -92,12 +92,15 @@ class LoginPage extends GetView {
                             ),
                             child: TextButton(
                               onPressed: () {},
-                              child: const Text('Cadastrar',
-                                  style: TextStyle(
-                                    // backgroundColor: light_blue,
-                                    color: Colors.white,
-                                    fontSize: 15,
-                                  )),
+                              child: const Padding(
+                                padding: EdgeInsets.all(8.0),
+                                child: Text('Cadastrar',
+                                    style: TextStyle(
+                                      // backgroundColor: light_blue,
+                                      color: Colors.white,
+                                      fontSize: 15,
+                                    )),
+                              ),
                             ),
                           ),
                           FloatingActionButton(
