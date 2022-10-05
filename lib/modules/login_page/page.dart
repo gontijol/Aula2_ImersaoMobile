@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:mobile_day/app/core/colors.dart';
+import 'package:mobile_day/modules/login_page/widgets/loginGoogle.dart';
 
 class LoginPage extends GetView {
   const LoginPage({Key? key}) : super(key: key);
@@ -79,6 +80,42 @@ class LoginPage extends GetView {
                           labelText: 'Senha',
                           labelStyle: const TextStyle(color: Colors.black),
                         ),
+                      ),
+                      const SizedBox(height: 20),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                          Container(
+                            decoration: BoxDecoration(
+                              color: light_blue,
+                              borderRadius: BorderRadius.circular(50),
+                            ),
+                            child: TextButton(
+                              onPressed: () {},
+                              child: const Text('Cadastrar',
+                                  style: TextStyle(
+                                    // backgroundColor: light_blue,
+                                    color: Colors.white,
+                                    fontSize: 15,
+                                  )),
+                            ),
+                          ),
+                          FloatingActionButton(
+                            onPressed: () {},
+                            backgroundColor: light_blue,
+                            child: const Icon(Icons.arrow_forward),
+                          )
+                        ],
+                      ),
+                      const SizedBox(
+                        height: 10,
+                      ),
+                      Row(
+                        children: [
+                          GoogleBtn1(
+                            onPressed: () {},
+                          ),
+                        ],
                       ),
                     ],
                   ),
