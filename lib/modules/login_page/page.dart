@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:mobile_day/app/core/colors.dart';
+import 'package:mobile_day/modules/login_page/widgets/loginApple.dart';
 import 'package:mobile_day/modules/login_page/widgets/loginGoogle.dart';
 
 class LoginPage extends GetView {
@@ -43,7 +44,7 @@ class LoginPage extends GetView {
                 ),
                 SizedBox(
                   width: MediaQuery.of(context).size.width * 0.7,
-                  height: MediaQuery.of(context).size.height * 0.4,
+                  height: MediaQuery.of(context).size.height * 0.47,
                   child: Column(
                     children: [
                       TextFormField(
@@ -103,6 +104,7 @@ class LoginPage extends GetView {
                               ),
                             ),
                           ),
+                          const SizedBox(width: 30),
                           FloatingActionButton(
                             onPressed: () {},
                             backgroundColor: light_blue,
@@ -114,13 +116,24 @@ class LoginPage extends GetView {
                         height: 10,
                       ),
                       Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           GoogleBtn1(
+                            onPressed: () {},
+                          ),
+                          AppleBtn1(
                             onPressed: () {},
                           ),
                         ],
                       ),
                     ],
+                  ),
+                ),
+                TextButton(
+                  onPressed: () => {},
+                  child: const Text(
+                    'Esqueci minha senha',
+                    style: TextStyle(color: light_blue),
                   ),
                 ),
               ],
