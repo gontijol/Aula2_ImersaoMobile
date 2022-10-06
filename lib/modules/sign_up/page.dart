@@ -114,6 +114,7 @@ class SignUp extends GetView {
                 SizedBox(
                   width: MediaQuery.of(context).size.width * 0.85,
                   child: TextFormField(
+                    // controller: controller.passwordController,
                     cursorColor: light_blue,
                     decoration: InputDecoration(
                       filled: true,
@@ -127,6 +128,23 @@ class SignUp extends GetView {
                       labelText: 'Confirmar senha',
                       labelStyle: const TextStyle(
                         color: Colors.black,
+                      ),
+                    ),
+                  ),
+                ),
+                const SizedBox(
+                  height: 20,
+                ),
+                TextButton(
+                  onPressed: () => Get.back(),
+                  child: const Padding(
+                    padding: EdgeInsets.all(8.0),
+                    child: Text(
+                      'Cadastrar',
+                      style: TextStyle(
+                        // backgroundColor: light_blue,
+                        color: Colors.white,
+                        fontSize: 15,
                       ),
                     ),
                   ),
