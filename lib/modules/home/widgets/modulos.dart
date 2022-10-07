@@ -6,9 +6,13 @@ import 'package:mobile_day/app/core/colors.dart';
 class WidgetModulo extends StatelessWidget {
   final String titulo;
   final String descricao;
+  final Function() onPressed;
 
   const WidgetModulo(
-      {required this.titulo, required this.descricao, super.key});
+      {required this.titulo,
+      required this.descricao,
+      required this.onPressed,
+      super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -33,7 +37,7 @@ class WidgetModulo extends StatelessWidget {
             ),
           ),
           child: InkWell(
-            onTap: () => {},
+            onTap: onPressed,
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [

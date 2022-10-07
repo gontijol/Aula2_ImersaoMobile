@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:mobile_day/app/core/colors.dart';
 import 'package:mobile_day/modules/home/widgets/modulos.dart';
+import 'package:mobile_day/modules/speech_to_text/page.dart';
 
 class HomePage extends GetView {
   const HomePage({super.key});
@@ -48,12 +49,14 @@ class HomePage extends GetView {
               // ignore: prefer_const_literals_to_create_immutables
               child: Column(children: [
                 WidgetModulo(
-                  titulo: 'Desafio 1',
+                  titulo: 'Speech to Text',
                   descricao: 'Desafio 2',
+                  onPressed: () => Get.to(SpeechToTextPage()),
                 ),
                 WidgetModulo(
                   titulo: 'Desafio 2',
                   descricao: 'Desafio 2',
+                  onPressed: () => {},
                 ),
               ]),
             )
