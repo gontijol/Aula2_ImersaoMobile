@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:mobile_day/app/core/colors.dart';
+import 'package:mobile_day/modules/home/page.dart';
 import 'package:mobile_day/modules/login_page/widgets/helpButton.dart';
 import 'package:mobile_day/modules/login_page/widgets/loginApple.dart';
 import 'package:mobile_day/modules/login_page/widgets/loginGoogle.dart';
@@ -112,7 +113,7 @@ class LoginPage extends GetView {
                             ),
                             const SizedBox(width: 30),
                             FloatingActionButton(
-                              onPressed: () {},
+                              onPressed: (() => Get.to(HomePage())),
                               backgroundColor: light_blue,
                               child: const Icon(Icons.arrow_forward),
                             )
